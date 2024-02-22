@@ -5,29 +5,6 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 
     <persistence-unit name="loja" transaction-type="RESOURCE_LOCAL">
-        <!--
-        <class>br.com.alura.loja.modelo.Produto</class> caso use Hibert
-
-        Pela JPA, deveríamos passar todas as classes/entidades do nosso projeto,
-        ou seja, passaríamos o caminho completo da classe, br.com.alura.loja.modelo.Produto.
-        Pela JPA, para cada entidade que mapearmos, além de mapear na classe, temos que
-        adicioná-la no persistence.xml com a tag class.
-
-        Porém, se tivermos utilizando o Hibernate, não precisamos adicionar a tag class,
-        porque ele consegue encontrar automaticamente as classes/entidades do nosso projeto.
-        Essa é uma particularidade do Hibernate, pode ser que as outras implementações não
-        façam isso e, portanto, teremos que, manualmente, adicionar o class.
-
-        Como estamos utilizando o Hibernate, e esse processo é meio trabalhoso: ao criar uma
-        nova tabela no banco, temos que criar a classe, fazer o mapeamento e adicionar no
-        persistence.xml. Para não esquecermos de nada, não vamos adicionar no nosso código,
-        pois o Hibernate encontrará automaticamente.
-
-        Outro detalhe importante, se adicionarmos uma entidade no class, temos que adicionar todas.
-        Se esquecermos alguma, o Hibernate só olhará para as que estiverem declaradas.
-        Ou mapeamos todas, ou nenhuma.
-        -->
-
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:loja"/>

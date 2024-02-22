@@ -1,14 +1,10 @@
 package br.com.alura.loja.modelo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "produtos") /* Como o Produto da class é diferente de produtos do banco de dados, utilizo @Table */
+@Table(name = "produtos") /* Utilizo @Table para mapear a classe Produto para a tabela "produtos" no banco de dados */
 public class Produto {
 
 
@@ -17,7 +13,7 @@ public class Produto {
     private Long id;
     private String nome;
 
-    /* @Column(name = "desc")  O mesmo para caso eu nomes diferentes da classe e o banco de dados */
+    /* @Column(name = "desc") Se necessário mudar nome de variável, utilizo @Column para mapear o atributo 'descricao' para a coluna 'desc' no banco de dados */
     private String descricao;
     private BigDecimal preco;
 
