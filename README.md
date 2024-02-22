@@ -21,7 +21,3 @@ Este projeto visa descomplicar os desafios comuns do JDBC, introduzindo a JPA co
 ## Gerenciamento do Projeto
 
 Este projeto utiliza Git para controle de versão e Maven para gerenciamento de dependências.
-
-## Autor
-
-Fabyan Roger Oliveira Bastos
