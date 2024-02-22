@@ -13,7 +13,9 @@ public class Produto {
     private Long id;
     private String nome;
 
-    /* @Column(name = "desc") Se necessário mudar nome de variável, utilizo @Column para mapear o atributo 'descricao' para a coluna 'desc' no banco de dados */
+    /* @Column(name = "db_descricao")
+       Se necessário mudar o nome da variável, utilizo @Column para mapear o atributo 'descricao' para a coluna 'db_descricao' no banco de dados
+    */
     private String descricao;
     private BigDecimal preco;
 
