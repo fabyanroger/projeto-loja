@@ -4,7 +4,7 @@ Olá! 👋 Bem-vindo ao meu projeto em andamento relacionado ao curso de Persist
 
 ## Descrição
 
-Este projeto visa descomplicar os desafios comuns do JDBC, introduzindo a JPA como a nossa super-heroína salvadora. Durante o curso, exploramos coisas interessantes, como adicionar a JPA em uma aplicação Java com Maven, configurar a JPA via arquivo `persistence.xml`, mapear entidades JPA e seus relacionamentos, entender o ciclo de vida de uma entidade JPA e fazer consultas elegantes usando JPQL.
+Este projeto visa descomplicar os desafios comuns do JDBC, introduzindo a JPA. Durante o curso, exploramos como adicionar a JPA em uma aplicação Java com Maven, configurar a JPA via arquivo `persistence.xml`, mapear entidades JPA e seus relacionamentos, entender o ciclo de vida de uma entidade JPA e fazer consultas elegantes usando JPQL.
 
 ## Pré-requisitos
 
