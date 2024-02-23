@@ -8,7 +8,6 @@ import java.time.LocalDate;
 @Table(name = "produtos") /* Utilizo @Table para mapear a classe Produto para a tabela "produtos" no banco de dados */
 public class Produto {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,6 +22,9 @@ public class Produto {
 
     @ManyToOne
     private Categoria categoria;
+
+    public Produto() {
+    }
 
     public Produto(String nome, String descricao, BigDecimal preco, Categoria categoria) {
         this.nome = nome;
